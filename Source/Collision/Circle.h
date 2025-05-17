@@ -1,0 +1,63 @@
+#pragma once
+
+
+/**
+	@file
+	@brief ÇQéüå≥â~
+	@author ótìÙò`
+*/
+
+
+//-----------------------------------------------------------------------------------
+// INCLUDE
+//-----------------------------------------------------------------------------------
+#include "Base.h"
+#include "Math/Vector2D.h"
+
+
+//-----------------------------------------------------------------------------------
+// NAMESPACE
+//-----------------------------------------------------------------------------------
+namespace Selene
+{
+namespace Collision
+{
+	/**
+		@brief ÇQéüå≥è„ÇÃâ~
+		@author ótìÙò`
+	*/
+	class SELENE_DLL_API CCircle
+	{
+	public:
+		Math::Vector2D vCenter;			///< â~ÇÃíÜêS
+		Float fRadius;					///< â~ÇÃîºåa
+
+	public:
+		/**
+			@brief ÉRÉìÉXÉgÉâÉNÉ^
+			@author ótìÙò`
+		*/
+		CCircle( void );
+
+		/**
+			@brief ÉRÉìÉXÉgÉâÉNÉ^
+			@author ótìÙò`
+
+			@param x		[in] Çwç¿ïW
+			@param y		[in] Çxç¿ïW
+			@param r		[in] îºåa
+		*/
+		CCircle( Float x, Float y, Float r );
+
+		/**
+			@brief ÉRÉìÉXÉgÉâÉNÉ^
+			@author ótìÙò`
+
+			@param c		[in] íÜêSç¿ïW
+			@param r		[in] îºåa
+		*/
+		CCircle( Math::Vector2D &c, Float r );
+	};
+}
+}
+
